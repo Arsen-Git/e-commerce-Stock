@@ -1,0 +1,138 @@
+.detail {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+  &__container {
+    padding: 0 50px;
+  }
+  &__left {
+    width: 520px;
+    height: 785px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__right {
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &__item {
+      color: #807d7e;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      &::after {
+        content: url("../../imgs/Market/arrow.svg");
+        margin-left: 15px;
+      }
+    }
+  }
+  &__title {
+    max-width: 500px;
+    color: #3c4242;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 47.6px */
+    letter-spacing: 0.68px;
+  }
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__count {
+      color: #807d7e;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__subtitle {
+    color: #3f4646;
+    font-family: Causten;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__size {
+    text-align: center;
+    max-width: 80px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1.5px solid #bebcbd;
+
+    color: #3c4242;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  &__price {
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: 1px solid #3c4242;
+
+    color: #3c4242;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__benefits {
+    padding-top: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 90px;
+
+    border-top: 1px solid #bebcbd;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    &__text {
+      color: #3c4242;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__section__title {
+    margin-bottom: 30px;
+  }
+  &__description {
+    color: #807d7e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 0.32px;
+  }
+}

@@ -1,0 +1,26 @@
+.market {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  &__content {
+    flex: 1;
+    margin-top: 50px;
+    &__title {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      &-black {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}

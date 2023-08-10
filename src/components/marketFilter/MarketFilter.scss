@@ -1,0 +1,100 @@
+.filter {
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 20px 30px;
+  border-radius: 0px 0px 2px 2px;
+  border-right: 1px solid #bebcbd;
+  border-bottom: 1px solid #bebcbd;
+  border-left: 1px solid #bebcbd;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    &:not(:first-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    &__item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #8a8989;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      &::after {
+        content: url("../../imgs/Market/arrow.svg");
+      }
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+    &__label {
+      color: #8a8989;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-elem {
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid #bebcbd;
+      outline: none;
+    }
+  }
+  &__sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &__item {
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      width: 60px;
+      border-radius: 8px;
+      border: 1px solid #bebcbd;
+      &-active {
+        background-color: #8434e1;
+        color: white;
+      }
+      &:hover {
+        box-shadow: 1px 1px 5px 0px rgba(66, 68, 90, 1);
+      }
+    }
+  }
+  &__btn {
+    cursor: pointer;
+
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+
+    background-color: #8434e1;
+    border-radius: 8px;
+    border: none;
+    color: white;
+  }
+}

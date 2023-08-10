@@ -1,0 +1,21 @@
+.admin {
+  max-width: 1440px;
+  margin: 0 auto;
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    margin: 50px 0;
+    &__item {
+      cursor: pointer;
+      font-size: 20px;
+      &-active {
+        font-size: 25px;
+        font-weight: 700;
+        color: #8a33fd;
+      }
+    }
+  }
+}

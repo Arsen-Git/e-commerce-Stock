@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  &-left {
+    max-height: calc(100vh - 112px);
+  }
+  &-right {
+    margin-left: 100px;
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &__title {
+      color: #333;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.68px;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      &__line {
+        height: 2px;
+        width: 248px;
+        background: rgba(102, 102, 102, 0.25);
+      }
+    }
+    &__input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 33px;
+      input {
+        padding: 16px 20px;
+        border-radius: 8px;
+        border: 1px solid #3c4242;
+
+        font-size: 20px;
+      }
+      &-labels {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-chars {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .df-aic {
+      gap: 5px;
+    }
+  }
+}

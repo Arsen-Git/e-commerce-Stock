@@ -1,0 +1,25 @@
+.orderList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.order {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &-done {
+    border: 1px solid green;
+    background-color: rgba(68, 255, 0, 0.2);
+  }
+  &__text {
+    font-size: 17px;
+  }
+}
+.btn-done {
+  background-color: rgba(68, 255, 0, 0.2);
+}

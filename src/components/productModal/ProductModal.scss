@@ -1,0 +1,43 @@
+.productModal {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    label {
+      color: rgba(0, 0, 0, 0.7);
+    }
+    input,
+    select {
+      text-align: center;
+    }
+  }
+}
+
+.animate {
+  animation: animate 1s linear;
+}
+
+@keyframes animate {
+  0% {
+    background-color: #8a33fd;
+  }
+
+  50% {
+    background-color: lightgreen;
+  }
+  100% {
+    background-color: #8a33fd;
+  }
+}

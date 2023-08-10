@@ -1,0 +1,41 @@
+.header {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &__item {
+      cursor: pointer;
+      color: #807d7e;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      transition: all 0.1s linear;
+      &-active {
+        color: #3c4242;
+        font-weight: 700;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    &__item {
+      cursor: pointer;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f6f6f6;
+      transition: all 0.1s linear;
+      &:hover {
+        box-shadow: 1px 1px 5px 0px rgba(66, 68, 90, 1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

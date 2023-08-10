@@ -1,0 +1,50 @@
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 45px 20px 60px;
+  border-radius: 12px;
+  border: 1.069px solid #323232;
+  background: #3c4242;
+  &__title {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    margin-bottom: 25px;
+  }
+  &__subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 65px;
+  }
+  &__gold {
+    color: rgba(251, 209, 3, 1);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 177px;
+      height: 85px;
+      border-radius: 12px;
+      background: #fff;
+    }
+  }
+}

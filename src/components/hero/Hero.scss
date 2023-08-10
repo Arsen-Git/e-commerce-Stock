@@ -1,0 +1,55 @@
+.hero {
+  margin: 0 auto;
+  height: 716px;
+  max-width: 1440px;
+
+  border-radius: 10px;
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__slider {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 716px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-size: 30px;
+    color: #fff;
+    &:last-child {
+      right: 0;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 130px 100px;
+  }
+  &__text {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37.771px;
+    letter-spacing: 0.157px;
+    text-transform: capitalize;
+  }
+  &__title {
+    max-width: 550px;
+    color: #fff;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 93.622px;
+    letter-spacing: 0.315px;
+  }
+}
